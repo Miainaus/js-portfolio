@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mia Zhang</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="#profile">Mia Zhang</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mia Zhang</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="sectionImgContainer">
+        <img src="./assets/profile.jpg" alt="profileImg" />
+      </div>
+      <div class="profileDesc">
+        <p class="profileText1">Hello, I'm</p>
+        <h2 class="profileTitle">Mia Zhang</h2>
+        <h3 class="profileText2">A Web Developer</h3>
+        <div class="profileBtn">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </div>
+        <div id="social-links">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mia-zhang-722a8921a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="github"
+            class="icon"
+            onclick="location.href='https://github.com/Miainaus'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="smallTitle">Get To Know More</p>
+      <h2 class="bigTitle">About Me</h2>
+      <div class="about-container">
+        <div class="about-pic">
+          <img src="./assets/about-pic.jpg" alt="aboutImg" />
+        </div>
+        <div class="aboutDesc">
+          <p>
+            Hello there! I'm a self-taught developer driven by an unquenchable passion for coding.
+            Coding isn't just a skill for me, it's a way of life.<br /> I wake up each day with a burning desire to dive into lines of code and create something remarkable.<br />
+            If you're seeking a developer who's passionate, innovative, and ready to contribute meaningfully to your projects, look no further. Let's collaborate and make some digital magic happen!
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="smallTitle">Explore My</p>
+      <h2 class="bigTitle">Skills</h2>
+      <div class="skills-container">
+        <div class="frontend">
+          <h1 class="skill-title">Frontend Development</h1>
+          <div class="skills-item">
+            <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+            <div class="skill-name html">
+              <h3>HTML</h3>
+              <span>
+              </span>
+            </div>
+        </div>
+        <div class="skills-item css">
+          <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+          <div class="skill-name">
+            <h3>CSS</h3>
+            <span></span>
+          </div>
+      </div>
+      <div class="skills-item">
+        <img src="./assets/checkmark.png" alt="skill" class="skill-icon">
+        <div class="skill-name sass">
+          <h3>SASS</h3>
+          <span></span>
+        </div>
+    </div>
+    <div class="skills-item">
+      <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+      <div class="skill-name javascript">
+        <h3>JavaScript</h3>
+        <span></span>
+      </div>
+  </div>
+  <div class="skills-item">
+    <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+    <div class="skill-name react">
+      <h3>React</h3>
+      <span></span>
+    </div>
+</div>
+<div class="skills-item noDisplay">
+  <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+  <div class="skill-name react">
+    <h3>React</h3>
+    <span></span>
+  </div>
+</div>
+       </div>
+       <div class="backend">
+        <h1 class="skill-title">Backend Development</h1>
+        <div class="skills-item">
+          <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+          <div class="skill-name nodejs">
+            <h3>Node JS</h3>
+            <span></span>
+          </div>
+      </div>
+      <div class="skills-item">
+        <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+        <div class="skill-name mongodb">
+          <h3>MongoDB</h3>
+          <span></span>
+        </div>
+    </div>
+    <div class="skills-item">
+      <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+      <div class="skill-name python">
+        <h3>Python</h3>
+        <span></span>
+      </div>
+    </span>
+  </div>
+  <div class="skills-item">
+    <img class="skill-icon" src="./assets/checkmark.png" alt="skill">
+    <div class="skill-name git">
+      <h3>Git</h3>
+      <span></span>
+    </div>
+</div>
+       </div>
+       </div>
+       <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="smallTitle">Browse My Recent</p>
+      <h2 class="bigTitle">Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <img src="./assets/project-1.png" alt="1">
+          <div class="projects-links">
+            <a href="https://github.com/Miainaus/E-shop-Molamola">GitHub</a>
+            <a href="http://www.mymolamola.com/">LiveDemo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./assets/project-2.png" alt="2">
+          <div class="projects-links">
+           <a href="https://github.com/Miainaus/movieLandingPage">GitHub</a>
+           <a href="https://miainaus.github.io/movieLandingPage/">LiveDemo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./assets/project-3.png" alt="3">
+          <div class="projects-links">
+            <a href="https://github.com/Miainaus/react-portfolio">GitHub</a>
+            <a href="https://miainaus.github.io/react-portfolio/">LiveDemo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./assets/project-4.png" alt="4">
+          <div class="projects-links">
+            <a href="https://github.com/Miainaus/myBlog">GitHub</a>
+            <a href="https://my-daily-blog-e3e6f8065fc4.herokuapp.com/">LiveDemo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./assets/project-5.png" alt="5">
+          <div class="projects-links">
+            <a href="https://github.com/Miainaus/taskMaster">GitHub</a>
+            <a href="https://mia-task-master-1b73de9e2c8c.herokuapp.com/">LiveDemo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./assets/project-4.png" alt="4">
+          <div class="projects-links">
+            <a href="https://github.com/Miainaus/myBlog">GitHub</a>
+            <a href="https://my-daily-blog-e3e6f8065fc4.herokuapp.com/">LiveDemo</a>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="smallTitle">Get in Touch</p>
+      <h2 class="bigTitle">Contact Me</h2>
+      <div class="contact-links">
+        <a href="mailto:yumiaozhang6@gmail.com"><img src="./assets/email.png" alt="email">yumiaozhang6@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mia-zhang-722a8921a/"><img src="./assets/linkedin.png" alt="email">Linkedin</a>
+      </div>
+      <p class="copyright">Copyright ©2023 Mia Zhang.All Rights Reserved</p>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow up"
+        onclick="location.href='./#profile'"
+      />
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
