@@ -382,7 +382,9 @@ section {
   height: 160px;
   object-fit: fill;
 }
-
+.last{
+  opacity: 0;
+}
 #contact {
   height: 100vh;
   flex-direction: column;
